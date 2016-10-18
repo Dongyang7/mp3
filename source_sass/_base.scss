@@ -1,1 +1,33 @@
 // Add any custom Sass & CSS here
+body {
+    list-style: none;
+    font-family: 'Russo One', sans-serif;
+    background-color: #cbeacb;
+}
+h1 {
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+.genres{
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+//    background-color: #777;
+    font-size: 20px;
+}
+.title{
+    font-size: 20px;
+}
+.poster{
+    &:hover{opacity: 0.7;}
+    padding: 20px 10px;
+}
+.list-view{
+    padding: 10px;
+}
+.plot{
+    text-align:justify;
+}
