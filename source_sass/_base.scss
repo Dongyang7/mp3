@@ -7,10 +7,12 @@ body {
 h1 {
     font-family: 'Russo One', sans-serif;
     text-align: center;
+    padding: 10px;
 }
 h2{
     text-align: center;
     font-family: 'Russo One', sans-serif;
+    padding: 20px;
 }
 .genres{
     text-align: center;
@@ -30,4 +32,15 @@ h2{
 }
 .plot{
     text-align:justify;
+}
+#left-btn{
+    top: 100px;
+    position: relative;
+}
+#right-btn{
+    top: 100px;
+    position: relative;
+}
+#ascend{
+    text-align: center;
 }
