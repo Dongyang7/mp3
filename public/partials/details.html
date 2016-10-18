@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="columns small-9 small-offset-3" ng-repeat="x in info | filter:{rank: ranking}:true">
+        <a ng-href="#details/{{x.rank-1}}">Pre</a>
+        <a ng-href="#details/{{x.rank+1}}">Next</a>
+        <div><img class="columns small-3" ng-src="data/images/{{x.imdbID}}.jpg"></div>
+        <div class="columns small-5 end">
+            <div>{{x.title}}</div>
+            <div>{{'Rank: '+x.rank}}</div>
+            <div>{{x.released}}</div>
+            <div>{{'Genre: '+x.genre}}</div>
+            <div class="plot">{{x.plot}}</div>
+        </div>
+    </div>
+</div>

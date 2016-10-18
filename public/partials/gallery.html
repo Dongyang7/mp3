@@ -1,0 +1,20 @@
+<div class="row genres">
+    <a ng-click="genre=''" ng-init="genre=''" class="columns small-1">All</a>
+    <a ng-click="genre='Action'" class="columns small-1">Action</a>
+    <a ng-click="genre='Adventure'" class="columns small-1">Adventure</a>
+    <a ng-click="genre='Crime'" class="columns small-1">Crime</a>
+    <a ng-click="genre='Comedy'" class="columns small-1">Comedy</a>
+    <a ng-click="genre='Drama'" class="columns small-1">Drama</a>
+    <a ng-click="genre='Musical'" class="columns small-1">Musical</a>
+    <a ng-click="genre='Mystery'" class="columns small-1">Mystery</a>
+    <a ng-click="genre='Romance'" class="columns small-1">Romance</a>
+    <a ng-click="genre='Sci-Fi'" class="columns small-1">Sci-Fi</a>
+    <a ng-click="genre='Thriller'" class="columns small-1">Thriller</a>
+    <a ng-click="genre='Western'" class="columns small-1">Western</a>
+</div>
+<div class="row small-up-6">
+    <div class="columns" ng-repeat="x in info | filter:{genre: genre}">
+        <a ng-href="#details/{{x.rank}}"><img class="poster" ng-src="data/images/{{x.imdbID}}.jpg"></a>
+
+    </div>
+</div>
