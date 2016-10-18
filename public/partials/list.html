@@ -7,12 +7,10 @@
             <option>title</option>
             <option>rank</option>
         </select>
-        <form action="">
-          <input type="radio" checked="checked" id="sort"> Ascending<br>
-          <input type="radio"> Descending<br>
+        <form id="ascend" class="columns small-6 small-offset-3">
+          <input ng-click="reverse=false" type="radio" name="sort" checked> Ascending
+          <input ng-click="reverse=true" type="radio" name="sort"> Descending
         </form>
-        <a ng-click="orderby=orderby">Ascending</a>
-        <a ng-click="orderby=-orderby">Descending</a>
         <div class="columns small-6 small-offset-4" ng-repeat="x in info | filter:title | orderBy:orderby:reverse">
             <div class="row list-view">
                 <a ng-href="#details/{{x.rank}}">
